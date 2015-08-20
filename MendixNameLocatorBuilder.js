@@ -5,6 +5,7 @@ LocatorBuilders.add('css:MendixName', function (e) {
     'use strict';
 	var PFX_NAME = 'mx-name-',
         PFX_NAME_INDEX = 'mx-name-index-',
+        NAME_WINDOWS_ACTIVE = 'mx-window-active',
         className,
         continueLoop,
         currentElement,
@@ -57,6 +58,11 @@ LocatorBuilders.add('css:MendixName', function (e) {
             }
             // Look for classes that identify a template grid or list view row
             className = findCssClassWithPrefix(currentElement, PFX_NAME_INDEX);
+            if (className) {
+                result = className + ' ' + result;
+            }
+            // Look for active popups
+            className = findCssClassWithPrefix(currentElement, NAME_WINDOWS_ACTIVE);
             if (className) {
                 result = className + ' ' + result;
             }

@@ -24,6 +24,10 @@ Steps to install:
 
 ## Use cases covered
 
+### The Company Expenses demo
+
+- The use case from the Selenium Mendix How-To page.
+
 ### Using https://ux.mendix.com/
 
 - Buttons
