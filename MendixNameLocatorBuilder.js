@@ -1,5 +1,5 @@
 /*jslint plusplus: true */
-/*global Selenium, LocatorBuilders, alert, browser, devel, console */
+/*global LocatorBuilders, browser */
 
 LocatorBuilders.add('css:MendixName', function (e) {
     'use strict';
@@ -73,7 +73,5 @@ LocatorBuilders.add('css:MendixName', function (e) {
         return 'css=' + result;
     } else {
         return null;
-
     }
-//	return 'css=.mx-name-textBox2 input';
 });
